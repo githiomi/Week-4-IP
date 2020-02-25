@@ -36,14 +36,22 @@
          <p>We appreciate you being here. Please specify you pizza specifications below: </p>
 
             <div class=|size>
-                <button id="size">SIZE</button>
-                <div class="overlay">
-                  <div class="text">Hello World</div>
+               <div class="sizet">
+                  <button id="size">SIZE</button>
+               </div>
+                <div class="sizec">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-4">
+                           
+                        </div>
+                     </div>
+                  </div>
                 </div>
             </div>
                  
             <div class="crust">
-               <button id="size">CRUST</button>
+               <button id="size" onclick="">CRUST</button>
                <div class="overlay">
                   <div class="text">Hello World</div>
                 </div>
@@ -56,6 +64,17 @@
                 </div>
             </div>
             
+            <div id="myOverlay" class="overlay">
+               <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+               <div class="overlay-content">
+                 <form action="action_page.php">
+                   <input type="text" placeholder="Search.." name="search">
+                   <button type="submit"><i class="fa fa-search"></i></button>
+                 </form>
+               </div>
+             </div>
+         
+      
       </div>
    </div>
 
