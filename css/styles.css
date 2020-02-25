@@ -1,0 +1,103 @@
+body{
+   background-color: black;
+}
+
+.jumbotron{
+   margin: 10px;
+   text-align: center;
+   color: white;
+   background-image: url("imgs/pizza5.png");
+   background-size: contain;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+}
+
+#mainlogo{
+   animation: bounce 2s infinite;
+   padding: 0px;
+   margin: 0px;
+   object-position: center;
+   border: 7px solid black;
+   border-radius: 70%;
+}
+
+.jumbotron h1{
+   padding: 30px 0px 20px 0px;
+   border-bottom: 5px solid gold;
+   border-radius: 70%;
+   font-weight: bolder;
+}
+.jumbotron p{
+   font-weight: bolder;
+   color: black;
+   font-size: 30px;
+}
+.container{
+   background-color: white;
+}
+
+.addition{
+   margin: 10px;
+   background-color: black;
+   color: gold;
+   border-radius: 7px;
+}
+.addition p{
+   padding: 30px;
+   font-size: 25px;
+   text-align: center;
+}
+.buttons{
+   text-align: center;
+   margin: 10px;
+   padding: 10px;
+   display: inline;
+}
+.buttons p{
+   font-weight: bolder;
+   font-size: 20px;
+}
+button{
+   width: 120px;
+   text-align: center;
+   padding: 10px;
+   margin: 40px;
+   background-color: black;
+   border: 3px solid gold;
+   color: white;
+   border-radius: 5px;
+}
+   button:hover{
+      width: 120px;
+      text-align: center;
+      padding: 10px;
+      margin: 40px;
+      background-color: white;
+      border: 3px solid black;
+      color: black;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+   }
+
+   .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #008CBA;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      transition: .3s ease;
+    }
+    /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
