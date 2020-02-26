@@ -31,45 +31,72 @@
          <p> A gift for your taste buds </p>
          <p> Thank you for choosing us to satisfy your pizza needs. All pizza bows to us! Dhosio's pizza place where its a taste bud party everyday </p>
       </div>
-
-      <div class="buttons">
-         <p>We appreciate you being here. Please specify you pizza specifications below: </p>
-
-            <div id=size>
-               <div class="sizet">
-                  <button id="sizeb" onclick="" >SIZE</button>
-               </div>
-                <div class="sizec">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-md-4">
-                           <img id="small" src="css/imgs/small.png">
-                        </div>
-                        <div class="col-md-4">
-                           <img id="medium" src="css/imgs/medium.png">
-                        </div>
-                        <div class="col-md-4">
-                           <img id="large" src="css/imgs/large.png">
-                        </div>
+      <div class="container">
+         <div class="row">
+            <div id="order" class="col-md-9">
+               <div class="buttons">
+                  <p>We appreciate you being here. Please specify you pizza specifications below: </p>
+         
+                     <div id=size>
+                           <button id="sizeb" onclick="sizeShow()" >SIZE</button>
+                           <div class="sizec">
+                               <div class="container">
+                                  <div class="row">
+                                    <div class="col-md-3">
+                                       <img id="small" src="css/imgs/small.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                       <img id="medium" src="css/imgs/medium.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                       <img id="large" src="css/imgs/large.png">
+                                    </div>
+                                 </div>
+                              </div>
+                         </div>
                      </div>
-                  </div>
-                </div>
-            </div>
-                 
-            <div class="crust">
-               <button id="crustb" onclick="">CRUST</button>
-               <div class="overlay">
-                  <div class="text">Hello World</div>
+
+                     <div id="crust">
+                         <button id="crustb" onclick="crustShow()">CRUST</button>
+                         <div class="crustc">
+                            <div class="container">
+                               <div class="row">
+                                  <div class="col-md-3">
+                                    <img id="crispy" src="css/imgs/crispycrust.jpg">
+                                  </div>
+                                  <div class="col-md-3">
+                                    <img id="stuffed" src="css/imgs/stuffedcrust.jpeg">
+                                  </div>
+                                  <div class="col-md-3">
+                                    <img id="gluttenfree" src="css/imgs/glutenfree.jpg">
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                     </div>
+
+                     <div id="toppings">
+                         <button id="size" onclick="toppingsShow()">TOPPINGS</button>
+                         <div class="toppingsc">
+                           <div class="container">
+                              <div class="row">
+                                 <div class="col-md-3">
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                         </div>
+                     </div>
                 </div>
             </div>
 
-            <div class="toppings">
-               <button id="size">TOPPINGS</button>
-               <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
+            <div id="checkout" class="col-md-3">
+               <h4>CHECKOUT TAB:</h4>
+               <p>Below you will see the orders you have placed and the amount of money payable.</p>
             </div>
-      
+
+         </div>
+                
       </div>
    </div>
 
