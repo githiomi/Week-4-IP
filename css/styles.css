@@ -129,10 +129,58 @@ button{
 }
 .imagetext{
    color: black;
-   font-weight: 5px;te
+   font-weight: 5px;
 }
 .delivery{
-   background-color: white;
+   background-image: url("imgs/header.jpg");
+   background-attachment: fixed;
+   background-size: contain;
    border-radius: 10px;
+   margin-bottom: 20px;
    height: 200px;
+}
+.delivery h3{
+   font-weight: bolder;
+   text-align: center;
+   color: white;
+   padding: 20px 0px 20px 0px;
+}
+#deliverform{
+   text-align: center;
+   color: white;
+   font-weight: bolder;
+}
+#deliverform input{
+   text-align: center;
+   margin: 50px;
+}
+
+.footer{
+   border-radius: 10px;
+	margin: 20px;
+	padding: 10px;
+	background-color: black;
+	color: white;
+   margin: 2px;
+   padding-top: 50px;
+}
+
+.footer .col-md-4{
+	border-right: 2px solid white;
+}
+
+.col-md-4 h3{
+	color: gold;
+	text-align: center;
+}
+
+.footer p{
+	text-align: center;
+}
+
+.footer ul li{
+	margin: 20px;
+	text-decoration: none;
+	list-style-type: none;
+	float: left;
 }

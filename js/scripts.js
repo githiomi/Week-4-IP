@@ -1,11 +1,11 @@
 function sizeShow() {
-   $(".sizec").toggle(1000);
+   $(".sizec").slideToggle(1000);
 }
 
 function crustShow() {
-   $(".crustc").toggle(1000);
+   $(".crustc").slideToggle(1000);
 }
 
 function toppingsShow() {
-   $(".toppingsc").toggle(1000);
+   $(".toppingsc").slideToggle(1000);
 }

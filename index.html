@@ -7,7 +7,7 @@
    <title> DHOSIO'S PIZZA </title>
    
    <link rel="icon" type="image/png" href="css/imgs/pizza5.png"/>
-	<link href="css/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
 	<script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
@@ -37,7 +37,7 @@
             <div id="order" class="col-md-9">
                <div class="buttons">
                   <p style="color: white;">We appreciate you being here. Please specify you pizza specifications below: </p>
-         
+
                      <div id=size>
                            <button id="sizeb" onclick="sizeShow()" >SIZE</button>
                            <div class="sizec">
@@ -59,14 +59,14 @@
                               </div>
                          </div>
                      </div>
-
+                  
                      <div id="crust">
                          <button id="crustb" onclick="crustShow()">CRUST</button>
                          <div class="crustc">
                             <div class="container">
                                <div class="row">
                                   <div class="col-md-3">
-                                    <img id="crispy" src="css/imgs/crispycrust.jpg">
+                                    <img id="crispy" src="css/imgs/crispycrust.jpg" value="Crispy Crust, 200">
                                     <p class="imagetext"> Crispy Crust <br> (Ksh.200) </p>
                                   </div>
                                   <div class="col-md-3">
@@ -122,19 +122,47 @@
                 </div>
 
                 <div class="delivery">
-
-                </div>
+                     <h3> DELIVERY OPTIONS</h3>
+                     <form action="/action_page.php" id="deliverform">
+                        <input type="radio" name="deliver" value="Don't Deliver" id="radiobutton">
+                            <label for="dont-deliver">Please Deliver</label>
+                        <input type="radio" name="deliver" value="Deliver" id="radiobutton">
+                            <label for="deliver">Do Not Deliver</label>
+                    </form>
+               </div>
 
             </div>
 
             <div id="checkout" class="col-md-3">
                <h4>CHECKOUT TAB:</h4>
-               <p>Below you will see the orders you have placed and the amount of money payable.</p>
+               <p>Below you will see the orders you have placed and the amount of money payable.</p>                                                            
+               
             </div>
 
          </div>
                 
       </div>
+
+      <div class="footer">
+		 <div class="row">
+			<div class="col-md-4">
+				<h3>DHOSIO'S PIZZARIA</h3>
+				<p>The Pizza Website that keeps you coming back for more!</p>
+			</div>
+			 <div class="col-md-4">
+				<p>Please find time to contact me at:</p>
+					<ul>
+						<li><a href="https://www.skype.com"><img src="css/imgs/skype.png" width="30px" height="30px"></a></li>
+						<li><a href="https://www.twitter.com"><img src="css/imgs/twitter.png" width="30px" height="30px"></a></li>
+						<li><a href="https://www.youtube.com"><img src="css/imgs/youtube.png" width="30px" height="30px"></a></li>
+						<li><a href="https://www.facebook.com"><img src="css/imgs/facebook.png" width="30px" height="30px"></a></li>
+					</ul>
+			 </div>
+			<div class="col-md-4">
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+		 </div>
+	    </div>
    </div>
 
 </body>
