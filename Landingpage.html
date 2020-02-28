@@ -1,4 +1,4 @@
-<html lang="en">
+<!DOCTYPE html>
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,39 +30,50 @@
 
       <h2 class="request"> For optimal services please insert your details below: </h2>
 
-      <form action="" class="input">
+      <form class="input">
          <label for="fName">First Name: </label>
          <input name="fName" class="fName" placeholder="Please insert your first name"><br>
 
          <label for="lName">Last Name: </label>
          <input name="lName" class="lName" type="text" placeholder="Please insert your last name:"><br>
 
-         <label for="pNumber"> Phone Number: </label>
+         <label for="pNumber"> Phone  No.: </label>
          <input name="pNumber" class="pNumber" placeholder="Please insert your phone number:"><br>
 
-         <label for="eAddress"> Email Address: </label>
-         <input name="eAddress" class="eAddress" placeholder="Please insert your email address:"><br>
+         <label for="eAddress"> Email Add: </label>
+         <input name="eAddress" class="eAddress" placeholder="Please insert your email address:"><br><br>
 
          <div class="selectNai">
             <p>Are you within Nairobi? </p>
             <form action="/action_page.php" id="selectNai">
                <input type="radio" name="withinNai" value="yes" id="radiobutton" onclick="displayDelivery()">
                    <label for="withinNai"> YES </label>
-               <input type="radio" name="withinNai" value="no" id="radiobutton">
+               <input type="radio" name="withinNai" value="no" id="radiobutton" onclick="hideDelivery()">
                    <label for="withinNai">NO</label>
+                     <div class="noDelivery"><p> Sorry. We only deliver within Nairobi </p> </div>
             </form>
 
          </div>
          <div class="addressInput">
-           <label for="fName">Delivery Address: </label>
-            <input name="cName" class="cName" placeholder="Please insert your city name">
+           <label for="dAddress">Delivery Address: </label>
+            <input name="cName" class="cName" placeholder="Please insert your town name">
             <input name="sName" class="sName" placeholder="Please insert your street name"><br>
+          </div>
 
-            <button id="confirmDetails" onclick="confirmDetails">CONFIRM DETAILS</button>
-         </div>
+
+         <button id="confirmDetailsBtn" onclick="confirmDetaisl()" type="submit">CONFIRM DETAILS</button> 
+         <br>
+         
       </form>
 
-         <button id="confirmDetails" onclick="confirmDetails">CONFIRM DETAILS</button> 
+      <div class="show-details">
+         <h4> PERSONAL DETAILS </h4>
+          <p> The order was placed by: <span class="fullName"></span> </p>
+          <p> We can contact you via: <span class="contactInfo"></span> </p>
+          <p> The order will be delivered to <span class="orderLocation"></span></p>
+       </div>
+         
+         <button id="proceedBtn"  href="http://127.0.0.1:5500/">PROCEED TO ORDER</button>
 
    </div>
 
