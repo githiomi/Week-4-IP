@@ -1,15 +1,36 @@
 body{
    background-color: black;
 }
+.navigations{
+   padding-top: 30px;
+   margin-left: 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline;
+   color: thistle;
+}
+.navigations a{
+   margin: 30px;
+   padding: 30px;
+   color: thistle;
+}
+     .navigations :hover{
+      text-decoration: none;
+         margin: 30px;
+         padding: 30px;
+         color: blue;
+         transition: all 0.5s ease-in;
+      } 
 
 .jumbotron{
-   margin: 10px;
+   margin-top: 10px;
    text-align: center;
    color: white;
    background-image: url("imgs/pizza5.png");
    background-size: contain;
    background-attachment: fixed;
    background-repeat: no-repeat;
+   border-radius: 20px;
 }
 
 #mainlogo{
@@ -37,14 +58,13 @@ body{
 }
 
 .addition{
-   margin: 10px;
-   background-color: black;
-   color: gold;
+   margin: 5px;
+   color: black;
    border-radius: 7px;
 }
 .addition p{
-   padding: 30px;
-   font-size: 25px;
+   padding: 10px;
+   font-size: 15px;
    text-align: center;
 }
 .buttons{
@@ -94,20 +114,27 @@ button{
 }  
 .col-md-3{
    background-color: white;
+   border-radius: 15px;
 }
 .col-md-3 img{
    width: 100%;
    height: 200px;
    padding: 10px;
 }
+.row{
+   border-radius: 15px;
+}
 .sizec{
    display: none;
+   border-radius: 15px;
 }
 .crustc{
    display: none; 
+   border-radius: 15px;
 }
 .toppingsc{
    display: none;
+   border-radius: 15px;
 }
 #size .col-md-3{
    cursor: pointer;
@@ -127,6 +154,14 @@ button{
    box-shadow: 3px 3px 3px red;
    margin-left: 40px;
 }
+
+#toppings .col-md-3 :hover{
+   cursor: pointer;
+   margin: 20px;
+   box-shadow: 3px 3px 3px black;
+   margin-left: 40px;
+}
+
 .imagetext{
    color: black;
    font-weight: 5px;
