@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title> DHOSIO'S PIZZA LANDING PAGE </title>
+   
+   <link rel="icon" type="image/png" href="css/imgs/pizza5.png"/>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="css/Landingpage.css"/>
+
+	<script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+    <script src="js/LandingPage.js"></script> 
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+
+</head>
+
+<body>
+   <div class="jumbotron">
+      <img id="mainlogo" src="css/imgs/logo.png" alt="Logo of Dhosio's Pizza"> 
+      <h1>DHOSIO'S PIZZARIA</h1>
+         <br>
+      <p>This is what pizza is meant to be!</p>
+   </div>
+
+   <div class="info">
+
+      <h2 class="request"> For optimal services please insert your details below: </h2>
+
+      <form action="" class="input">
+         <label for="fName">First Name: </label>
+         <input name="fName" class="fName" placeholder="Please insert your first name"><br>
+
+         <label for="lName">Last Name: </label>
+         <input name="lName" class="lName" type="text" placeholder="Please insert your last name:"><br>
+
+         <label for="pNumber"> Phone Number: </label>
+         <input name="pNumber" class="pNumber" placeholder="Please insert your phone number:"><br>
+
+         <label for="eAddress"> Email Address: </label>
+         <input name="eAddress" class="eAddress" placeholder="Please insert your email address:"><br>
+
+         <div class="selectNai">
+            <p>Are you within Nairobi? </p>
+            <form action="/action_page.php" id="selectNai">
+               <input type="radio" name="withinNai" value="yes" id="radiobutton" onclick="displayDelivery()">
+                   <label for="withinNai"> YES </label>
+               <input type="radio" name="withinNai" value="no" id="radiobutton">
+                   <label for="withinNai">NO</label>
+            </form>
+
+         </div>
+         <div class="addressInput">
+           <label for="fName">Delivery Address: </label>
+            <input name="cName" class="cName" placeholder="Please insert your city name">
+            <input name="sName" class="sName" placeholder="Please insert your street name"><br>
+
+            <button id="confirmDetails" onclick="confirmDetails">CONFIRM DETAILS</button>
+         </div>
+      </form>
+
+         <button id="confirmDetails" onclick="confirmDetails">CONFIRM DETAILS</button> 
+
+   </div>
+
+</body>
+</html>
