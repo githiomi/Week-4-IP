@@ -61,6 +61,7 @@ body{
    margin: 5px;
    color: black;
    border-radius: 7px;
+   background-color: wheat;
 }
 .addition p{
    padding: 10px;
@@ -100,20 +101,21 @@ button{
       transition: all 0.5s ease-in;
    }
 #checkout{
-   background-color: turquoise;
+   background-color: black;
    border-radius: 10px;
+   color: white;
 } 
 #checkout h4{
    padding-top: 20px;
    text-align: center;
-   color: black;
+   color: white;
 }
 #order{
-   background-color: black;
+   background-color: white;
    border-radius: 10px;
 }  
 .col-md-3{
-   background-color: white;
+   background-color: wheat ;
    border-radius: 15px;
 }
 .col-md-3 input{
@@ -144,19 +146,19 @@ button{
 #size .col-md-3{
    cursor: pointer;
    margin: 20px;
-   box-shadow: 3px 3px 3px red;
+   box-shadow: 3px 3px 3px black;
    margin-left: 40px;
 }
 #crust .col-md-3{
    cursor: pointer;
    margin: 20px;
-   box-shadow: 3px 3px 3px red;
+   box-shadow: 3px 3px 3px black;
    margin-left: 40px;
 }
 #toppings .col-md-3{
    cursor: pointer;
    margin: 20px;
-   box-shadow: 3px 3px 3px red;
+   box-shadow: 3px 3px 3px black;
    margin-left: 40px;
 }
 .imagetext{
@@ -187,6 +189,33 @@ button{
    margin: 50px;
 }
 
+.pizzasizes{
+   border: 3px solid red;
+   border-radius: 10px;
+   margin: 5px;
+   padding: 5px;
+   text-align: left;
+   color: white;
+   display: none;
+}
+.pizzacrusts{
+   border: 3px solid red;
+   border-radius: 10px;
+   margin: 5px;
+   padding: 5px;
+   text-align: left;
+   color: white;
+   display: none;
+}
+.pizzatoppings{
+   border: 3px solid red;
+   border-radius: 10px;
+   margin: 5px;
+   padding: 5px;
+   text-align: left;
+   color: white;
+   display: none;
+}
 .footer{
    border-radius: 10px;
 	margin: 20px;

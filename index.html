@@ -12,6 +12,7 @@
 
 	<script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
     <script src="js/scripts.js"></script> 
+    <script src="js/LandingPage.js"></script> 
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css"/>
 
@@ -33,13 +34,13 @@
          <img id="mainlogo" src="css/imgs/logo.png" alt="Logo of Dhosio's Pizza"> 
          <h1>DHOSIO'S PIZZARIA</h1>
             <br>
-         <p>This is what pizza is meant to be!</p>
+         <p>This is what pizza was meant to be!</p>
       </div>
 
       <div class="addition">
          <p> A gift for your taste buds <br>
          <p> Thank you for choosing us to satisfy your pizza needs. All pizza bows to us! Dhosio's pizza place where its a taste bud party everyday </p>
-         <p>The homemade pizza dough is produced in-house daily and is another reason why the pizza at Pizza Inn always tastes better. The Twisty Bread, the signature Wingz and the delicious Double Meal are additional value-for-money options that keep our satisfied customers coming back time after time. These are the meals that have made our Terrific Tuesday everyone’s favourite day of the week. When entertaining, a Hawaiian, a Regina, or a Peri Peri Chicken pizza from Pizza Inn is the obvious and perfect option to please crowds of all ages.  
+         <p>The homemade pizza dough is produced in-house daily and is another reason why the pizza at Dhosio's Pizzaria always tastes better. The Twisty Bread, the signature Wingz and the delicious Double Meal are additional value-for-money options that keep our satisfied customers coming back time after time. These are the meals that have made our Terrific Tuesday everyone’s favourite day of the week. When entertaining, a Hawaiian, a Regina, or a Peri Peri Chicken pizza from Pizza Inn is the obvious and perfect option to please crowds of all ages.  
          </p>
       </div>
 
@@ -47,7 +48,7 @@
          <div class="row">
             <div id="order" class="col-md-9">
                <div class="buttons">
-                  <p style="color: white;">We appreciate you being here. Please select you pizza specifications below: </p>
+                  <p style="color: black;">We appreciate you being here. Please select you pizza specifications below: </p>
 
                      <div id=size>
                            <button id="sizeb" onclick="sizeShow()" >SIZE</button>
@@ -55,16 +56,19 @@
                                <div class="container">
                                   <div class="row">
                                     <div class="col-md-3">
-                                       <input type="image" id="small" class="pizzaSize" src="css/imgs/small.png" value="Small Size, Ksh:400" onclick="sizeOrder();">
+                                       <img type="image" class="pizzaSize" src="css/imgs/small.png">
                                        <p class="imagetext">Small (Ksh.400) <br> 4 Slices</p>
+                                       <button id="small" value="Small (Ksh 400)" value="400" onclick="sizeOrder1();">Add to cart</button>
                                     </div>
                                     <div class="col-md-3">
-                                       <input type="image" id="medium" class="pizzaSize" src="css/imgs/medium.png" onclick="sizeOrder();">
-                                       <p class="imagetext">Medium (Ksh.700) <br> 6 Slices</p>
+                                       <input type="image" class="pizzaSize" src="css/imgs/medium.png">
+                                       <p class="imagetext">Medium(Ksh.700) <br> 6 Slices</p>
+                                       <button id="medium" value="Medium (Ksh 700)" onclick="sizeOrder2();">Add to cart</button>
                                     </div>
                                     <div class="col-md-3">
-                                       <input type="image" id="large" class="pizzaSize" src="css/imgs/large.png" onclick="sizeOrder();">
+                                       <input type="image" class="pizzaSize" src="css/imgs/large.png">
                                        <p class="imagetext">Large (Ksh.1000) <br> 8 Slices</p>
+                                       <button id="large" value="Large (Ksh 1000)" onclick="sizeOrder3();">Add to cart</button>
                                     </div>
                                  </div>
                               </div>   
@@ -77,16 +81,19 @@
                             <div class="container">
                                <div class="row">
                                   <div class="col-md-3">
-                                    <img id="crispy" src="css/imgs/crispycrust.jpg" value="Crispy Crust, 200" onclick="crustOrder()">
+                                    <img src="css/imgs/crispycrust.jpg" value="Crispy Crust, 200" onclick="crustOrder()">
                                     <p class="imagetext"> Crispy Crust <br> (Ksh.200) </p>
+                                    <button id="crispy" value="Crispy Crust(Ksh 200)" onclick="crustOrder1();">Add to cart</button>
                                   </div>
                                   <div class="col-md-3">
-                                    <img id="stuffed" src="css/imgs/stuffedcrust.jpeg">
+                                    <img src="css/imgs/stuffedcrust.jpeg">
                                     <p class="imagetext"> Stuffed Crust <br> (Ksh.300) </p>
+                                    <button id="stuffed" value="Stuffed Crust (Ksh 200)" onclick="crustOrder2();">Add to cart</button>
                                   </div>
                                   <div class="col-md-3">
-                                    <img id="gluttenfree" src="css/imgs/glutenfree.jpg">
-                                    <p class="imagetext"> Glutten Free Crust <br> (Ksh.400) </p>
+                                    <img src="css/imgs/glutenfree.jpg">
+                                    <p class="imagetext"> Glutten Free <br> (Ksh.400) </p>
+                                    <button id="gluttenfree" value="Glutten Free (Ksh 200)" onclick="crustOrder3();">Add to cart</button>
                                   </div>
                                </div>
                             </div>
@@ -99,31 +106,37 @@
                            <div class="container">
                               <div class="row">
                                  <div class="col-md-3">
-                                    <img id="gluttenfree" src="css/imgs/tomatoes.jpg">
+                                    <img src="css/imgs/tomatoes.jpg">
                                     <p class="imagetext"> Tomatoes <br> (Ksh. 50) </p>
+                                    <button id="tomatoes" value="Tomatoes (Ksh. 50)" onclick="toppingsOrder1();">Add to cart</button>
                                  </div>
                                  <div class="col-md-3">
-                                    <img id="gluttenfree" src="css/imgs/cheese.jpg">
+                                    <img src="css/imgs/cheese.jpg">
                                     <p class="imagetext"> Cheese <br> (Ksh. 50) </p>
+                                    <button id="cheese" value="Cheese (Ksh. 50)" onclick="toppingsOrder2();">Add to cart</button>
                                  </div>
                                  <div class="col-md-3">
-                                    <img id="gluttenfree" src="css/imgs/pineapples.jpg">
+                                    <img src="css/imgs/pineapples.jpg">
                                     <p class="imagetext"> Pineapple <br> (Ksh. 50) </p>
+                                    <button id="pineapples" value="Pineapples (Ksh. 50)" onclick="toppingsOrder3();">Add to cart</button>
                                  </div>
                                </div>
 
                                <div class="row">
                                  <div class="col-md-3">
-                                    <img id="gluttenfree" src="css/imgs/greenpepper.jpg">
+                                    <img src="css/imgs/greenpepper.jpg">
                                     <p class="imagetext"> Green Pepper <br> (Ksh. 50) </p>
+                                    <button id="greenPepper" value="Green Pepper (Ksh. 50)" onclick="toppingsOrder4();">Add to cart</button>
                                  </div>
                                  <div class="col-md-3">
-                                    <img id="gluttenfree" src="css/imgs/pepperoni.jpg">
+                                    <img src="css/imgs/pepperoni.jpg">
                                     <p class="imagetext"> Pepperoni <br> (Ksh. 50) </p>
+                                    <button id="pepperoni" value="Pepperoni (Ksh. 50)" onclick="toppingsOrder5();">Add to cart</button>
                                  </div>
                                  <div class="col-md-3">
-                                    <img id="gluttenfree" src="css/imgs/mushrooms.jpg">
+                                    <img src="css/imgs/mushrooms.jpg">
                                     <p class="imagetext"> Mushrooms <br> (Ksh. 50) </p>
+                                    <button id="mushrooms" value="Mushrooms (Ksh. 50)" onclick="toppingsOrder6();">Add to cart</button>
                                  </div>
                                </div>
 
@@ -147,11 +160,27 @@
             <div id="checkout" class="col-md-3">
                <h4>CHECKOUT TAB:</h4>
                <p>Below you will see the orders you have placed and the amount of money payable.</p>                                                            
-                  <div class="orders">
-                     <ul class="ordersView">
+                  <div class="pizzasizes">
+                     <h6>PIZZA SIZES</h6>
+                     <ul class="sizesView">
 
                      </ul>
                   </div>
+
+                  <div class="pizzacrusts">
+                     <h6>PIZZA CRUSTS</h6>
+                     <ul class="crustsView">
+
+                     </ul>
+                  </div>
+
+                  <div class="pizzatoppings">
+                     <h6>PIZZA TOPPINGS</h6>
+                     <ul class="toppingsView">
+
+                     </ul>
+                  </div>
+                  <p id="total">Amount payable: <span class="finalTotal"></span></p>
             </div>
 
          </div>
