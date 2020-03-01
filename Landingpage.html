@@ -32,7 +32,7 @@
 
       <form class="input">
          <label for="fName">First Name: </label>
-         <input name="fName" class="fName" placeholder="Please insert your first name"><br>
+         <input name="fName" class="fName" id="fName" placeholder="Please insert your first name"><br>
 
          <label for="lName">Last Name: </label>
          <input name="lName" class="lName" type="text" placeholder="Please insert your last name:"><br>
@@ -52,26 +52,25 @@
                    <label for="withinNai">NO</label>
                      <div class="noDelivery"><p> Sorry. We only deliver within Nairobi </p> </div>
             </form>
-
          </div>
+
          <div class="addressInput">
            <label for="dAddress">Delivery Address: </label>
             <input name="cName" class="cName" placeholder="Please insert your town name">
             <input name="sName" class="sName" placeholder="Please insert your street name"><br>
           </div>
-
-
-         <button id="confirmDetailsBtn" onclick="confirmDetaisl()" type="submit">CONFIRM DETAILS</button> 
-         <br>
-         
       </form>
 
-      <div class="show-details">
-         <h4> PERSONAL DETAILS </h4>
-          <p> The order was placed by: <span class="fullName"></span> </p>
-          <p> We can contact you via: <span class="contactInfo"></span> </p>
-          <p> The order will be delivered to <span class="orderLocation"></span></p>
-       </div>
+
+         <button id="confirmDetailsBtn" onclick="confirmDetails()" type="submit">CONFIRM DETAILS</button> 
+         <br>
+         
+         <div class="show-details">
+           <h4> PERSONAL DETAILS </h4>
+            <p> The order was placed by: <span class="fullName"></span> </p>
+            <p> We can contact you via: <span class="contactInfo"></span> </p>
+            <p> The order will be delivered to: <span class="orderLocation"></span></p>
+         </div>
          
          <button id="proceedBtn"  href="http://127.0.0.1:5500/">PROCEED TO ORDER</button>
 
