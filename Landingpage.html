@@ -35,13 +35,13 @@
          <input name="fName" class="fName" id="fName" placeholder="Please insert your first name"><br>
 
          <label for="lName">Last Name: </label>
-         <input name="lName" class="lName" type="text" placeholder="Please insert your last name:"><br>
+         <input name="lName" id="lName" type="text" placeholder="Please insert your last name:"><br>
 
          <label for="pNumber"> Phone  No.: </label>
-         <input name="pNumber" class="pNumber" placeholder="Please insert your phone number:"><br>
+         <input name="pNumber" id="pNumber" placeholder="Please insert your phone number:"><br>
 
          <label for="eAddress"> Email Add: </label>
-         <input name="eAddress" class="eAddress" placeholder="Please insert your email address:"><br><br>
+         <input name="eAddress" id="eAddress" placeholder="Please insert your email address:"><br><br>
 
          <div class="selectNai">
             <p>Are you within Nairobi? </p>
@@ -56,23 +56,23 @@
 
          <div class="addressInput">
            <label for="dAddress">Delivery Address: </label>
-            <input name="cName" class="cName" placeholder="Please insert your town name">
-            <input name="sName" class="sName" placeholder="Please insert your street name"><br>
+            <input name="cName" id="cName" placeholder="Please insert your town name">
+            <input name="sName" id="sName" placeholder="Please insert your street name"><br>
           </div>
       </form>
 
 
          <button id="confirmDetailsBtn" onclick="confirmDetails()" type="submit">CONFIRM DETAILS</button> 
          <br>
-         
+
          <div class="show-details">
            <h4> PERSONAL DETAILS </h4>
-            <p> The order was placed by: <span class="fullName"></span> </p>
+            <p> The order will be placed by: <span class="fullName"></span> </p>
             <p> We can contact you via: <span class="contactInfo"></span> </p>
             <p> The order will be delivered to: <span class="orderLocation"></span></p>
          </div>
          
-         <button id="proceedBtn"  href="http://127.0.0.1:5500/">PROCEED TO ORDER</button>
+         <button id="proceedBtn"><a href="index.html">PROCEED TO ORDER</a></button>
 
    </div>
 

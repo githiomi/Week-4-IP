@@ -22,7 +22,7 @@
    <div class="container">
 
       <div class="navigations">
-            <a href="#">BACK TO DETAILS PAGE</a>
+            <a href="Landingpage.html">BACK TO DETAILS PAGE</a>
             <a href="#order">PLACE ORDER</a>
             <a href="#">CONTACT US</a>
             <a href="#">HELP</a>
@@ -39,6 +39,8 @@
       <div class="addition">
          <p> A gift for your taste buds <br>
          <p> Thank you for choosing us to satisfy your pizza needs. All pizza bows to us! Dhosio's pizza place where its a taste bud party everyday </p>
+         <p>The homemade pizza dough is produced in-house daily and is another reason why the pizza at Pizza Inn always tastes better. The Twisty Bread, the signature Wingz and the delicious Double Meal are additional value-for-money options that keep our satisfied customers coming back time after time. These are the meals that have made our Terrific Tuesday everyone’s favourite day of the week. When entertaining, a Hawaiian, a Regina, or a Peri Peri Chicken pizza from Pizza Inn is the obvious and perfect option to please crowds of all ages.  
+         </p>
       </div>
 
       <div class="container">
@@ -53,15 +55,15 @@
                                <div class="container">
                                   <div class="row">
                                     <div class="col-md-3">
-                                       <img id="small" src="css/imgs/small.png">
+                                       <input type="image" id="small" class="pizzaSize" src="css/imgs/small.png" value="Small Size, Ksh:400" onclick="sizeOrder();">
                                        <p class="imagetext">Small (Ksh.400) <br> 4 Slices</p>
                                     </div>
                                     <div class="col-md-3">
-                                       <img id="medium" src="css/imgs/medium.png">
+                                       <input type="image" id="medium" class="pizzaSize" src="css/imgs/medium.png" onclick="sizeOrder();">
                                        <p class="imagetext">Medium (Ksh.700) <br> 6 Slices</p>
                                     </div>
                                     <div class="col-md-3">
-                                       <img id="large" src="css/imgs/large.png">
+                                       <input type="image" id="large" class="pizzaSize" src="css/imgs/large.png" onclick="sizeOrder();">
                                        <p class="imagetext">Large (Ksh.1000) <br> 8 Slices</p>
                                     </div>
                                  </div>
@@ -145,7 +147,11 @@
             <div id="checkout" class="col-md-3">
                <h4>CHECKOUT TAB:</h4>
                <p>Below you will see the orders you have placed and the amount of money payable.</p>                                                            
-               
+                  <div class="orders">
+                     <ul class="ordersView">
+
+                     </ul>
+                  </div>
             </div>
 
          </div>

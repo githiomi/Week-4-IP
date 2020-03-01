@@ -19,26 +19,25 @@ function hideDelivery() {
 
 function confirmDetails(){
 
-      var firstName = $("form.fName").val();
-      var lastName = $("form.lName").val();
-      var phoneNumber = $("form.pNumber").val();
-      var emailAddress = $("form.eAddress").val();
-      var cityName = $("form.cName").val();
-      var streetName = $("form.sName").val();
+      var firstName = $("#fName").val();
+      var lastName = $("#lName").val();
+      var phoneNumber = $("#pNumber").val();
+      var emailAddress = $("#eAddress").val();
+      var cityName = $("#cName").val();
+      var streetName = $("#sName").val();
 
-      console.log(firstName);
-    
+      console.log(phoneNumber);
+
     var Person = new  Pdetails (firstName, lastName, phoneNumber, emailAddress, cityName, streetName);
 
    Pdetails.prototype.fullName = function() {
-      return this.fname + " " + this.lname;
-      
+      return Person.fname + " " + Person.lname; 
    }
    Pdetails.prototype.contactDetails = function() {
-      return this.phoneNumber + ", "  + this.emailAddress;
+      return Person.number + ", "  + Person.email;
    }
    Pdetails.prototype.deliveryAddress = function() {
-      return this.cityName + ", " + this.streetName;
+      return Person.cname + ", " + Person.sname;
    }
 
          $(".show-details").show(1000);
