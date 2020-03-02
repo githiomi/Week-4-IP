@@ -26,21 +26,21 @@ function sizeOrder1() {
 
    var size = $("#small").val();
 
-   $(".sizesView").append( size + "<br>");
+   $(".sizesView").text(size);
 }
 function sizeOrder2() {
    $(".pizzasizes").show(500);
 
    var size = $("#medium").val();
 
-   $(".sizesView").append(size + "<br>");
+   $(".sizesView").text(size);
 }
 function sizeOrder3() {
    $(".pizzasizes").show(500);
 
    var size = $("#large").val();
 
-   $(".sizesView").append(size+ "<br>");
+   $(".sizesView").text(size);
 }
 
 function crustOrder1() {
