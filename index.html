@@ -32,7 +32,7 @@
 
       <div class="jumbotron">
          <img id="mainlogo" src="css/imgs/logo.png" alt="Logo of Dhosio's Pizza"> 
-         <h1>DHOSIO'S PIZZARIA</h1>
+         <h1 class="h1-reponsive gold-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse">DHOSIO'S PIZZARIA</h1>
             <br>
          <p>This is what pizza was meant to be!</p>
       </div>
@@ -58,17 +58,17 @@
                                     <div class="col-md-3">
                                        <img type="image" class="pizzaSize" src="css/imgs/small.png">
                                        <p class="imagetext">Small (Ksh.400) <br> 4 Slices</p>
-                                       <button id="small" value="Small (Ksh 400)" value="400" onclick="sizeOrder1();">Add to cart</button>
+                                       <button id="small"  value="400" onclick="sizeOrder1();">Add to cart</button>
                                     </div>
                                     <div class="col-md-3">
                                        <input type="image" class="pizzaSize" src="css/imgs/medium.png">
                                        <p class="imagetext">Medium(Ksh.700) <br> 6 Slices</p>
-                                       <button id="medium" value="Medium (Ksh 700)" onclick="sizeOrder2();">Add to cart</button>
+                                       <button id="medium" value="700" onclick="sizeOrder2();">Add to cart</button>
                                     </div>
                                     <div class="col-md-3">
                                        <input type="image" class="pizzaSize" src="css/imgs/large.png">
                                        <p class="imagetext">Large (Ksh.1000) <br> 8 Slices</p>
-                                       <button id="large" value="Large (Ksh 1000)" onclick="sizeOrder3();">Add to cart</button>
+                                       <button id="large" value="1000" onclick="sizeOrder3();">Add to cart</button>
                                     </div>
                                  </div>
                               </div>   
@@ -83,17 +83,17 @@
                                   <div class="col-md-3">
                                     <img src="css/imgs/crispycrust.jpg" value="Crispy Crust, 200" onclick="crustOrder()">
                                     <p class="imagetext"> Crispy Crust <br> (Ksh.200) </p>
-                                    <button id="crispy" value="Crispy Crust(Ksh 200)" onclick="crustOrder1();">Add to cart</button>
+                                    <button id="crispy" value="200" onclick="crustOrder1();">Add to cart</button>
                                   </div>
                                   <div class="col-md-3">
                                     <img src="css/imgs/stuffedcrust.jpeg">
                                     <p class="imagetext"> Stuffed Crust <br> (Ksh.300) </p>
-                                    <button id="stuffed" value="Stuffed Crust (Ksh 200)" onclick="crustOrder2();">Add to cart</button>
+                                    <button id="stuffed" value="200" onclick="crustOrder2();">Add to cart</button>
                                   </div>
                                   <div class="col-md-3">
                                     <img src="css/imgs/glutenfree.jpg">
                                     <p class="imagetext"> Glutten Free <br> (Ksh.400) </p>
-                                    <button id="gluttenfree" value="Glutten Free (Ksh 200)" onclick="crustOrder3();">Add to cart</button>
+                                    <button id="gluttenfree" value="200" onclick="crustOrder3();">Add to cart</button>
                                   </div>
                                </div>
                             </div>
@@ -108,17 +108,17 @@
                                  <div class="col-md-3">
                                     <img src="css/imgs/tomatoes.jpg">
                                     <p class="imagetext"> Tomatoes <br> (Ksh. 50) </p>
-                                    <button id="tomatoes" value="Tomatoes (Ksh. 50)" onclick="toppingsOrder1();">Add to cart</button>
+                                    <button id="tomatoes" value="50" onclick="toppingsOrder1();">Add to cart</button>
                                  </div>
                                  <div class="col-md-3">
                                     <img src="css/imgs/cheese.jpg">
                                     <p class="imagetext"> Cheese <br> (Ksh. 50) </p>
-                                    <button id="cheese" value="Cheese (Ksh. 50)" onclick="toppingsOrder2();">Add to cart</button>
+                                    <button id="cheese" value="50" onclick="toppingsOrder2();">Add to cart</button>
                                  </div>
                                  <div class="col-md-3">
                                     <img src="css/imgs/pineapples.jpg">
                                     <p class="imagetext"> Pineapple <br> (Ksh. 50) </p>
-                                    <button id="pineapples" value="Pineapples (Ksh. 50)" onclick="toppingsOrder3();">Add to cart</button>
+                                    <button id="pineapples" value="50" onclick="toppingsOrder3();">Add to cart</button>
                                  </div>
                                </div>
 
@@ -126,17 +126,17 @@
                                  <div class="col-md-3">
                                     <img src="css/imgs/greenpepper.jpg">
                                     <p class="imagetext"> Green Pepper <br> (Ksh. 50) </p>
-                                    <button id="greenPepper" value="Green Pepper (Ksh. 50)" onclick="toppingsOrder4();">Add to cart</button>
+                                    <button id="greenPepper" value="50" onclick="toppingsOrder4();">Add to cart</button>
                                  </div>
                                  <div class="col-md-3">
                                     <img src="css/imgs/pepperoni.jpg">
                                     <p class="imagetext"> Pepperoni <br> (Ksh. 50) </p>
-                                    <button id="pepperoni" value="Pepperoni (Ksh. 50)" onclick="toppingsOrder5();">Add to cart</button>
+                                    <button id="pepperoni" value="50" onclick="toppingsOrder5();">Add to cart</button>
                                  </div>
                                  <div class="col-md-3">
                                     <img src="css/imgs/mushrooms.jpg">
                                     <p class="imagetext"> Mushrooms <br> (Ksh. 50) </p>
-                                    <button id="mushrooms" value="Mushrooms (Ksh. 50)" onclick="toppingsOrder6();">Add to cart</button>
+                                    <button id="mushrooms" value="50" onclick="toppingsOrder6();">Add to cart</button>
                                  </div>
                                </div>
 
@@ -159,7 +159,16 @@
 
             <div id="checkout" class="col-md-3">
                <h4>CHECKOUT TAB:</h4>
-               <p>Below you will see the orders you have placed and the amount of money payable.</p>                                                            
+               
+               <p>Below you will see the orders you have placed and the amount of money payable.</p>          
+
+               <p>How many pizzas would you like?</p>
+               <select id="orders"><p style="color: white;">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+               </select>
+               
                   <div class="pizzasizes">
                      <h6>PIZZA SIZES</h6>
                      <ul class="sizesView">
@@ -180,6 +189,8 @@
 
                      </ul>
                   </div>
+
+                  <button id="addPizza" onclick="addAnother()">ADD A PIZZA</button>
                   <p id="total">Amount payable: <span class="finalTotal"></span></p>
             </div>
 

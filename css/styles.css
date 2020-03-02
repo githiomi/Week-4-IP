@@ -216,6 +216,14 @@ button{
    color: white;
    display: none;
 }
+#addPizza{
+   font-size: 15px;
+   margin-left: 27%;
+}
+#orders{
+   margin-left: 40%;
+   width: 20%;
+}
 .footer{
    border-radius: 10px;
 	margin: 20px;
