@@ -88,12 +88,12 @@
                                   <div class="col-md-3">
                                     <img src="css/imgs/stuffedcrust.jpeg">
                                     <p class="imagetext"> Stuffed Crust <br> (Ksh.300) </p>
-                                    <button id="stuffed" value="200" onclick="crustOrder2();">Add to cart</button>
+                                    <button id="stuffed" value="300" onclick="crustOrder2();">Add to cart</button>
                                   </div>
                                   <div class="col-md-3">
                                     <img src="css/imgs/glutenfree.jpg">
                                     <p class="imagetext"> Glutten Free <br> (Ksh.400) </p>
-                                    <button id="gluttenfree" value="200" onclick="crustOrder3();">Add to cart</button>
+                                    <button id="gluttenfree" value="400" onclick="crustOrder3();">Add to cart</button>
                                   </div>
                                </div>
                             </div>
@@ -143,18 +143,7 @@
                            </div>
                          </div>
                      </div>
-                </div>
-               
-                <div class="delivery">
-                     <h3> DELIVERY OPTIONS</h3>
-                     <form action="/action_page.php" id="deliverform">
-                        <input type="radio" name="deliver" value="Don't Deliver" id="radiobutton">
-                            <label for="dont-deliver">Please Deliver</label>
-                        <input type="radio" name="deliver" value="Deliver" id="radiobutton">
-                            <label for="deliver">Do Not Deliver</label>
-                    </form>
-               </div>
-
+                  </div>
             </div>
 
             <div id="checkout" class="col-md-3">
@@ -164,9 +153,9 @@
 
                <p>How many pizzas would you like?</p>
                <select id="orders"><p style="color: white;">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
                </select>
                
                   <div class="pizzasizes">
@@ -190,9 +179,26 @@
                      </ul>
                   </div>
 
-                  <button id="addPizza" onclick="addAnother()">ADD A PIZZA</button>
+                  <button id="addPizza" onclick="addPizza()">GET TOTAL</button>
                   <p id="total">Amount payable: <span class="finalTotal"></span></p>
             </div>
+
+            <div class="delivery">
+               <h3> DELIVERY OPTIONS</h3>
+               <form action="/action_page.php" id="deliverform">
+                  <input type="radio" name="deliver" value="y" id="radiobutton" onclick="finalShowy()">
+                      <label for="dont-deliver">Please Deliver</label>
+                  <input type="radio" name="deliver" value="n" id="radiobutton" onclick="finalShown()"> 
+                      <label for="deliver">Do Not Deliver</label>
+              </form>
+         </div>
+
+         <div class="finalShow">
+            <h4> CHECKOUT </h4>
+            <p> <span class="orderLocation"></span></p>
+            <p> <span id="totalP"></span></p>
+         </div>
+
 
          </div>
                 

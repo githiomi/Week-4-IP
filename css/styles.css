@@ -166,12 +166,13 @@ button{
    font-weight: 5px;
 }
 .delivery{
-   background-image: url("imgs/header.jpg");
+   background-image: url("imgs/pizza4.jpg");
    background-attachment: fixed;
    background-size: contain;
    border-radius: 10px;
-   margin-bottom: 20px;
+   margin: 20px;
    height: 200px;
+   width: 100%;
 }
 .delivery h3{
    font-weight: bolder;
@@ -188,7 +189,14 @@ button{
    text-align: center;
    margin: 50px;
 }
-
+.finalShow{
+   display: none;
+   text-align: center;
+   background-color: wheat;
+   width: 100%;
+   margin: 10px;
+   padding: 15px;
+}
 .pizzasizes{
    border: 3px solid red;
    border-radius: 10px;
