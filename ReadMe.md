@@ -33,7 +33,7 @@ It is made completly using sublime Text 3 where all the following files were cre
 No bugs to report at the moment! the system works efficiently at 100% guaranteed. Feel free to search the output on googl to ensure that it coincides exactly.
 
 ## Link to live page
-[This is my link to live pages] https://githiomi.github.io/Week-4-IP/
+[This is my link to live pages] https://githiomi.github.io/Week-4-IP/Landingpage.html
 
 ## Setup Instructions
 git clone https://github.com/githiomi/Week-4-IP into your terminal. Navigate to the Week-4-IP folder through cd Documents/Desktop/moringa/Week-4-IP. Open the folder in your favourite editor,for vscode,is code . and for atom, atom . Open the index.html in your browser.
